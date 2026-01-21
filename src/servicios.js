@@ -8,5 +8,19 @@ export function get(ruta, callback, callbackError) {
         } else {
             throw new Error(response.statusText);
         }
-    }).then()
+    }).then(data()) // FIXME: Arreglar
+    .catch();
+        callbackError(console.error())
+}
+
+export function post(ruta, body, callback, callbackError) {
+
+}
+
+export function del() {
+
+}
+
+export function put() {
+    
 }
